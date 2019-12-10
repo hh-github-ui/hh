@@ -1,0 +1,62 @@
+/*
+CSS学习：
+padding：即内边距，围绕着内容（比如段落）的空间。
+border：即边框，紧接着内边距的线。
+margin：即外边距，围绕元素外部的空间。
+width ：元素的宽度
+background-color ：元素内容和内边距底下的颜色
+color ：元素内容（通常是文本）的颜色
+text-shadow ：为元素内的文本设置阴影
+display ：设置元素的显示模式（暂略）
+*/
+html{
+    font-size: 10px;  /*px 表示像素pixels; 基础字号为10像素*/
+    font-family: 'Heebo', sans-serif;  /*Google fonts 输出的CSS*/
+    background-color: #C3EDF3;  /*页面背景颜色*/
+}
+
+body{
+    width: 600px;  /*强制页面永远保持600像素宽*/
+    margin: 0 auto;  /*为 margin 或 padding 等属性设置两个值时，第一个值代表元素的上方和下方（在这个例子中设置为 0），而第二个值代表左边和右边（在这里，auto 是一个特殊的值，意思是水平方向上左右对称）*/
+    background-color: #FF9500;  /*背景颜色*/
+    padding: 0 20px 20px 20px;  /*不设置上方的内边距，设置右边，下方，左边的内边距为20像素。值以上、右、下、左的顺序排列*/
+    border: 5px solid black;  /*直接为 body 设置 5 像素的黑色实线边框*/
+}
+
+h3{
+    font-size: 30px;  /*设置标题大小*/
+    text-align: center; /*居中显示*/
+    color: red;
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 3px 3px 1px black;  /*为元素中的文本提供阴影，四个值依次是：水平偏移值，垂直偏移值，模糊半径，阴影的基色*/
+}
+
+img{
+    display: block; /*赋予图片块级行为*/
+    margin: 0 auto;
+    width: 580px;
+}
+
+p,li{
+    font-size: 16px;  /*文本大小*/
+    line-height: 2;  /*文本行高*/
+    letter-spacing: 2px;  /*字间距*/
+}
+
+button{
+    font-size: 20px;
+    background-color: #9EE4EF;
+}
+
+/*元素选择器
+p,h3{
+    color: red;
+    width: 300px;
+}
+
+ID选择器
+#first-ul{
+    border: 1px solid black;
+}
+*/
